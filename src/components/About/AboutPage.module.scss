@@ -1,6 +1,47 @@
+@import "src/index";
+
+.about {
+  padding: 130px;
 
 
-.test {
-  font-size: 36px;
-  text-align: center;
+  h1 {
+    font-weight: normal;
+    font-size: 38px;
+    padding-bottom: 18px;
+    color: $orange-color;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .about__items {
+
+    display: flex;
+    justify-content: space-between;
+
+    .about__item {
+      background: linear-gradient(#ff9800,#ffb23f);
+      border-radius: 10px 50px 10px 30px;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      margin-right: 32px;
+      padding: 20px;
+      width: calc(33.33333% - 21.33333px);
+    }
+  }
+
+  .about__slider__img{
+    width: 300px;
+    height: 300px;
+    img {
+      width: 80%;
+      margin: auto;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
 }

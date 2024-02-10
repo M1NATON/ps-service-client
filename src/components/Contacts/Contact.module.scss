@@ -1,0 +1,27 @@
+@import "src/index";
+
+.contact{
+  padding-top: 130px;
+  margin-bottom: 237px;
+
+  .contact__items{
+    color: $orange-color;
+    display: flex;
+    justify-content: space-between;
+
+    .contact__info{
+      h1{
+        font-weight: normal;
+        margin-bottom: 25px;
+      }
+      p{
+        margin-bottom: 15px;
+      }
+    }
+
+    .contact__map {
+
+    }
+  }
+}
+
