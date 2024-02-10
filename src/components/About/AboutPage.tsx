@@ -1,11 +1,11 @@
 import React from 'react';
-
-const About = () => {
+import s from './AboutPage.module.scss'
+const AboutPage = () => {
     return (
         <div>
-            <h1>About</h1>
+            <h1 className={s.test}>About</h1>
         </div>
     );
 };
 
-export default About;
+export default AboutPage;

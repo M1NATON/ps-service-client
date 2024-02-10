@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Feedback = () => {
+const FeedbackPage = () => {
     return (
         <div>
             <h1>Feedback</h1>
@@ -8,4 +8,4 @@ const Feedback = () => {
     );
 };
 
-export default Feedback;
+export default FeedbackPage;

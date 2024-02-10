@@ -7,21 +7,19 @@
 
 
 .slider__container{
-  width: 546px;
+  width: 100%;
 
 
   .slider__item{
     width: 546px;
     text-align: center;
     align-items: center;
-    background: red;
+
+
     .slider__img{
-      width: 56px;
+      width: 100%;
     }
 
-    img{
-      width: 546px;
-    }
 
   }
 
