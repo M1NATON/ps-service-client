@@ -8,6 +8,7 @@ import item from '../../assets/f_webp/lawyer-product14.jpg'
 import fullRating from '../../assets/f_webp/star-bg.png'
 import nullRating from '../../assets/f_webp/star-contr.png'
 import '../../index.scss'
+import ApplicationForm from "../Application/ApplicationForm";
 
 const HomePage = () => {
 
@@ -29,8 +30,8 @@ const HomePage = () => {
     };
 
     return (
-        <div className={styles.home__background}>
-            <div>
+        <div >
+            <div className={styles.home__background}>
                 <div className='container'>
                     <div>
                         <div className={styles.slider__container}>
@@ -245,7 +246,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-
+            <ApplicationForm/>
         </div>
     );
 };

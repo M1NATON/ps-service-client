@@ -24,8 +24,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/declarations.d.ts"
-  ]
+  "include": ["src"]
 }

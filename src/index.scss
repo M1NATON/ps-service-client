@@ -4,7 +4,7 @@
 
 
 $orange-color: #ff9800;
-$background-gradient-color: linear-gradient(180deg,rgba(255,152,0,.5),hsla(0,0%,96%,.5));
+$background-gradient-color: linear-gradient(180deg,rgba(255,152,0,.5), hsl(0, 0%, 100%));
 * {
   margin: 0;
   padding: 0;
@@ -97,12 +97,16 @@ $background-gradient-color: linear-gradient(180deg,rgba(255,152,0,.5),hsla(0,0%,
     }
   }
   p{
-    opacity: .5;
     text-align: right;
     a{
-      color: #000;
+      color: #fff;
       text-decoration: none;
-      opacity: .8;
+      opacity: .7;
+      transition: all .2s;
+    }
+    a:hover{
+
+      opacity: 1;
     }
   }
 }

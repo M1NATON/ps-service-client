@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import logo from '../assets/logo.png'
 import {Link} from "react-router-dom";
 import '../index.scss'
