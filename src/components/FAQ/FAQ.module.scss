@@ -1,0 +1,31 @@
+@import "src/index";
+$width: calc(100мпvh - 90px);
+
+.faq{
+  margin-top: 150px;
+  color: $orange-color;
+
+  h1{
+    font-size: 38px;
+    font-weight: normal;
+    color: $orange-color;
+    margin-bottom: 20px;
+  }
+
+  .faq__items__accordion{
+    margin-bottom: 100px;
+    height: $width;
+    .faq__accordion{
+      background: rgba(255,152,0,.07);
+      color: $orange-color;
+      border-radius: 25px;
+      margin-bottom: 20px;
+      border: none;
+      padding: 10px;
+      h2{
+        font-size: 26px;
+        font-weight: normal;
+      }
+    }
+  }
+}
