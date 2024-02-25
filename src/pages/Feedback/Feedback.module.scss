@@ -1,0 +1,35 @@
+@import "src/index";
+
+.feedback__item {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 25px;
+  text-align: center;
+  margin-right: 30px;
+
+  .feedback__item__name {
+    font-weight: normal;
+    color: $orange-color;
+    margin-bottom: 5px;
+  }
+
+  .feedback__item__date {
+    color: #607d8b;
+    font-size: 13px;
+  }
+
+  .feedback__item__rating {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    img {
+      width: 25px;
+    }
+  }
+
+  .feedback__item__text {
+
+  }
+}

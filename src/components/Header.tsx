@@ -1,11 +1,11 @@
 import React from 'react';
 // @ts-ignore
 import logo from '../assets/logo.png'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import '../index.scss'
 const Header = () => {
     return (
-        <div>
+        <div className='header__wrapper'>
             <div className='container'>
                 <div className='header'>
 
@@ -15,17 +15,19 @@ const Header = () => {
 
                     <nav>
                         <ul>
-                            <li><Link to='/'>Главная</Link></li>
-                            <li><Link to='/services'>Услуги</Link></li>
-                            <li><Link to='/feedback'>Отзывы</Link></li>
-                            <li><Link to='/about'>О компании</Link></li>
-                            <li><Link to='/faq'>FAQ</Link></li>
-                            <li><Link to='/contacts'>Контакты</Link></li>
+                            <li><NavLink to='/' className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }>Главная</NavLink></li>
+                            <li><NavLink to='/services'>Услуги</NavLink></li>
+                            <li><NavLink to='/feedback'>Отзывы</NavLink></li>
+                            <li><NavLink to='/about'>О компании</NavLink></li>
+                            <li><NavLink to='/faq'>FAQ</NavLink></li>
+                            <li><NavLink to='/contacts'>Контакты</NavLink></li>
                         </ul>
                     </nav>
 
                     <div className='header__link'>
-                        <a href="#">Узнать цену</a>
+                        <a href="#">Профиль</a>
                     </div>
                 </div>
             </div>

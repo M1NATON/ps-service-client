@@ -6,12 +6,16 @@ import AppRouter from "./components/AppRouter";
 
 function App() {
     return (
-        <>
-            <Header/>
 
-            <AppRouter/>
+        <div className='wrapper'>
+            <Header/>
+            <div className='wrapper__main'>
+                <AppRouter/>
+            </div>
             <Footer/>
-        </>
+        </div>
+
+
     );
 }
 

@@ -1,0 +1,53 @@
+@import "src/index";
+
+.main {
+  margin-top: 150px;
+
+
+
+
+
+
+  .service__container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+
+    .service__img *{
+      width: 30%;
+      height: 50%;
+      object-fit: cover;
+    }
+
+    .service__info{
+      width: 50%;
+      color: $orange-color;
+
+      h1{
+        font-weight: normal;
+        margin-bottom: 15px;
+        font-size: 42px;
+      }
+      p{
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+
+      button{
+        background: $orange-color;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color .2s;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover{
+        background: #d78200;
+      }
+    }
+  }
+}
