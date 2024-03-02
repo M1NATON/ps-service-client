@@ -1,6 +1,5 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import {IService} from "../model/IService";
-import {BaseQueryArg} from "@reduxjs/toolkit/dist/query/baseQueryTypes";
 
 
 export const serviceAPI = createApi({

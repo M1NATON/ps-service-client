@@ -1,0 +1,31 @@
+@import "src/index";
+
+.background{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.14);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal{
+  width: 500px;
+  padding: 20px;
+  background: #fff;
+  position: absolute;
+  top: 90%;
+  right: 80%;
+  border-radius: 15px;
+
+
+  .title{
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid $orange-color;
+  }
+
+}

@@ -1,0 +1,55 @@
+@import "../../index";
+.main__top{
+  margin-top: 150px;
+}
+.main{
+
+  border: 1px solid $orange-color;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+  color: $orange-color;
+  .title{
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+
+  }
+
+
+  form{
+    text-align: center;
+
+
+    button{
+      background: $orange-color;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color .2s;
+      border: none;
+      cursor: pointer;
+    }
+
+
+
+    .input__list{
+      margin: auto;
+      width: 50%;
+      text-align: start;
+      margin-bottom: 10px;
+
+      input{
+        width: 100%;
+        outline: none;
+        border: $orange-color 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        color: $orange-color;
+      }
+    }
+  }
+}

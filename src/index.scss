@@ -3,7 +3,7 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 
-$orange-color: #ff9800;
+$orange-color: rgb(255, 152, 0);
 $height: calc(100vh);
 $background-gradient-color: linear-gradient(180deg,rgba(255,152,0,.5), hsl(0, 0%, 100%));
 * {
@@ -84,6 +84,83 @@ html, body {
   }
 
   .header__link {
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+  
+    
+
+
+    .header__basket__modal{
+
+
+      h3{
+        font-weight: normal;
+        text-align: center;
+        margin-top: 10%;
+      }
+      .header__modal__btn__delete{
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: red;
+        font-size: 14px;
+      }
+
+      .header__modal__lists{
+        padding: 10px;
+
+        .header__order__btn{
+          background: $orange-color;
+          color: #fff;
+          padding: 15px 30px;
+          text-decoration: none;
+          border-radius: 25px;
+          transition: background-color .2s;
+          border: none;
+        }
+
+        .header__modal__list{
+          display: flex;
+          justify-content: space-between;
+          border: 1px solid $orange-color;
+          padding: 10px 5px;
+          transition: background-color .2s;
+          margin-bottom: 15px;
+          border-radius: 5px;
+          div{
+            display: flex;
+            gap: 10px;
+          }
+        }
+        .header__modal__list:hover{
+          background: rgba(255, 150, 0, 0.1);
+        }
+      }
+
+
+
+    }
+
+    button{
+      border: none;
+      background: none;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .header__count__product{
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 15px;
+      background: $orange-color;
+      font-size: 12px;
+      border-radius: 50%;
+    }
+
     a {
       background: $orange-color;
       color: #fff;

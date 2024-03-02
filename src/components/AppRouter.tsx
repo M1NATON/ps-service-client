@@ -8,6 +8,9 @@ import ContactsPage from "../pages/Contacts/ContactsPage";
 import AboutPage from "../pages/About/AboutPage";
 import AdminPanel from "../pages/AdminPanel/AdminPanel";
 import ServiceItemPage from "../pages/ServiceItemPage/ServiceItemPage";
+import ProfilePage from "../pages/Profile/ProfilePage";
+import Login from "../pages/Authorization/Login";
+import Registration from "../pages/Authorization/Registration";
 
 const AppRouter = () => {
     return (
@@ -21,6 +24,9 @@ const AppRouter = () => {
                 <Route key='/contacts' path='/contacts' element={<ContactsPage/>}/>
                 <Route key='/about' path='/about' element={<AboutPage/>}/>
                 <Route key='/admin' path='/admin' element={<AdminPanel/>}/>
+                <Route key='/profile' path='/profile' element={<ProfilePage/>}/>
+                <Route key='/login' path='/login' element={<Login/>}/>
+                <Route key='/registration' path='/registration' element={<Registration/>}/>
                 <Route key='/*' path='/*' element={<Navigate to='/'/>}/>
             </Routes>
         </div>
