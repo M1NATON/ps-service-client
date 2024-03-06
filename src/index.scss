@@ -90,11 +90,46 @@ html, body {
     gap: 30px;
     position: relative;
   
-    
+    .header__auth__link{
+      display: flex;
+      gap: 15px;
+      position: relative;
+      .header__profile__block{
+        position: absolute;
+        top: 120%;
+        right: 0;
+        width: max-content;
+        background: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $orange-color;
+        border-radius: 15px;
+        a{
+          margin: 20px 0;
+        }
+      }
+
+      button{
+        background: $orange-color;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color .2s;
+        border: none;
+      }
+    }
 
 
     .header__basket__modal{
 
+      
+      .header__alert__basket{
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+      }
 
       h3{
         font-weight: normal;
@@ -111,6 +146,12 @@ html, body {
 
       .header__modal__lists{
         padding: 10px;
+
+
+        .total__price{
+          margin-bottom: 15px;
+          font-size: 14px;
+        }
 
         .header__order__btn{
           background: $orange-color;
@@ -245,4 +286,13 @@ html, body {
 
 .btn:hover{
   background: #d78200;
+}
+
+.header__alert__registration{
+  position: fixed;
+  bottom: 30%;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: auto;
 }

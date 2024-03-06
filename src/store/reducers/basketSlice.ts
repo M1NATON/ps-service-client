@@ -1,8 +1,8 @@
-// basketSlice.ts
+
 
 import { createSlice } from "@reduxjs/toolkit";
 
-// Определение типов
+
 export interface BasketItem {
     title: string
     service_id: number;
@@ -42,7 +42,8 @@ const basketSlice = createSlice({
             }
         },
         removeBasket(state, action) {
-            state.items = state.items.filter(item => item.service_id !== action.payload);
+            state.items = state.items.filter(item => item.service_id !== action.payload.service_id);
+            state.totalPrice -= action.payload.totalPrice
             state.totalQuantity -=1
         },
         clearBasket(state) {

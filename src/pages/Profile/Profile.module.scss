@@ -13,4 +13,41 @@
     margin-bottom: 50px;
   }
 
+  .order__list{
+
+
+    .order__null{
+      text-align: center;
+      font-weight: normal;
+      color: $orange-color;
+      margin-top:  50px;
+    }
+    
+    .order__list__title{
+      font-weight: normal;
+      color: $orange-color;
+      margin-bottom: 15px;
+    }
+    
+    .order__block{
+      border: 1px solid $orange-color;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      width: 100%;
+
+
+      .order__service{
+        width: 20%;
+      }
+    }
+    
+  }
+  
+  
 }
