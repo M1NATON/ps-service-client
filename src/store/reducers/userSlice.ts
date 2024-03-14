@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 
 interface AuthState {
-    user: any; // Ваши данные пользователя
+    user: any;
     isAuthenticated: boolean ;
     accessToken: string | null;
 }

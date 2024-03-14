@@ -4,6 +4,7 @@ import {userAPI} from "../../services/UserService";
 import {useNavigate} from "react-router-dom";
 import {useAppSelector} from "../../hooks/redux";
 import {Alert} from "@mui/material";
+import toast from "react-hot-toast";
 
 const Registration = () => {
 
@@ -32,14 +33,10 @@ const Registration = () => {
                 email: email,
                 password: password
             })
+            toast.success('Вы успешно зарегистрированы!')
             navigate('/login')
-            setAlert(true)
-            setAlertText('Вы успешно зарегистрировались')
-            alertClear()
         } else{
-            setAlert(true)
-            setAlertText('Заполните поля')
-            alertClear()
+            toast.error('Заполните поля');
         }
 
 

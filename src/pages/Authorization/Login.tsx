@@ -1,10 +1,10 @@
-// Login.js
 import React, {useEffect, useState} from 'react';
 import s from "./Authorization.module.scss";
 import { useNavigate } from "react-router-dom";
 import {userAPI} from "../../services/UserService";
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
 import {setAccessToken, setUser} from "../../store/reducers/userSlice";
+import toast from "react-hot-toast";
 
 
 const Login = () => {
@@ -13,12 +13,14 @@ const Login = () => {
     const [alert, setAlert] = useState<string>('');
     const navigate = useNavigate();
     const dispatch = useAppDispatch()
-    const [loginUser, {data}] = userAPI.useLoginUserMutation()
+    const [loginUser, {data, error}] = userAPI.useLoginUserMutation()
     const {refetch, data:UserProfile} = userAPI.useProfileUserQuery()
     const {user, accessToken} = useAppSelector(state => state.auth)
 
     useEffect(() => {
         if(data && data.token){
+            toast.success('Вы успешно вошли!')
+            navigate('/profile')
             localStorage.setItem('token', data.token)
             dispatch(setAccessToken(data.token))
         }
@@ -27,15 +29,32 @@ const Login = () => {
     useEffect(() => {
         if (accessToken) refetch()
     }, [accessToken]);
+    useEffect(() => {
+        if(error) {
+            toast.error('Пользователь с таким email не найден!');
+        }
+    }, [error]);
+
 
     const btnLogin = async(e: React.FormEvent) => {
         e.preventDefault()
-        await loginUser({
-            email: email,
-            password: password
-        })
-        navigate('/profile')
+        try{
+            if(email && password) {
+                await loginUser({
+                    email: email,
+                    password: password
+                })
+            } else {
+                toast.error('Заполните поля');
+            }
+
+        } catch (e) {
+            console.log('e', e)
+        }
+
     }
+
+
 
     return (
         <div className={s.main__top}>

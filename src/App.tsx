@@ -6,6 +6,7 @@ import AppRouter from "./components/AppRouter";
 import {userAPI} from "./services/UserService";
 import {setUser} from "./store/reducers/userSlice";
 import {useAppDispatch} from "./hooks/redux";
+import {Toaster} from "react-hot-toast";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                 <AppRouter/>
             </div>
             <Footer/>
+            <Toaster />
         </div>
     );
 }
